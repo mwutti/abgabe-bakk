@@ -1,0 +1,41 @@
+.map
+{   
+    position: relative;
+}
+
+.map_top
+{
+    	position: absolute;
+	top: 0px;
+	left 0px;
+    	z-index: 3;
+}
+
+.map_bottom
+{
+    position: absolute;
+    z-index: 1; 
+    top: 5px;
+    left: 0px;   
+}
+
+.target
+{
+	position:absolute;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+.callpic
+{
+	position:absolute;
+	z-index: 4;
+	top: 0px;
+   	left: 0px;
+	
+}
+
+

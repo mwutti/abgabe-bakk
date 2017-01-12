@@ -1,0 +1,3 @@
+<area id="24" shape="rect" coords="819,1010,836,1027" onClick="showAusstellerPreview(id)">
+<area id="1" shape="rect" coords="810,966,827,983" onClick="showAusstellerPreview(id)">
+<area id="56" shape="rect" coords="153,208,170,225" onClick="showAusstellerPreview(id)">

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/CompanyHeaderBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:background="@color/backgroundProfile"
+            >
+
+            <ImageView
+                android:id="@+id/logoCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left|top"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                />
+
+            <Button
+                android:id="@+id/companyMapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/map"
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:textColor="@color/white"
+                 />
+
+            <Button
+                android:id="@+id/companyFavoriteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2dip"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dip"
+                android:layout_toLeftOf="@+id/companyMapButton"
+                android:background="@drawable/star"
+                android:focusable="false"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/companyData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CompanyHeaderBar"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="3dip"
+            
+            android:background="@color/backgroundProfile"
+             >
+
+            <ImageView
+                android:id="@+id/imagePerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:minWidth="150px" />
+
+            <TextView
+                android:id="@+id/headerAnsprechsperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imagePerson"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/imagePerson"
+                android:text="@string/header_ansprechsperson"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentAnsprechsperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerAnsprechsperson"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/imagePerson"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/headerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentAnsprechsperson"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imagePerson"
+                android:text="@string/header_email"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerEmail"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/imagePerson"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/headerTelefon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentEmail"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imagePerson"
+                android:text="@string/header_telefon"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentTelefon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerTelefon"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/imagePerson" 
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:id="@+id/headerInternet"                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagePerson"
+                android:layout_alignLeft="@id/imagePerson"                
+                android:layout_marginTop="15dp"                
+                android:text="@string/header_internet"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerInternet"
+                android:layout_alignLeft="@id/headerInternet"                
+                android:layout_toRightOf="@+id/imagePerson" />
+
+            <TextView
+                android:id="@+id/headerBeschreibung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentInternet"                
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/header_beschreibung"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentBeschreibung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerBeschreibung"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/headerAdresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentBeschreibung"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/header_adresse"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentAdresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerAdresse"
+                android:layout_marginLeft="5dp" 
+                android:paddingRight="5dp"/>
+            
+            <TextView
+                android:id="@+id/headerStandorte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentAdresse"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/header_standorte"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentStandorte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerStandorte"
+                android:layout_marginLeft="5dp" 
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:id="@+id/headerStudiengaenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentStandorte"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/header_studiengaenge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentStudiengaenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerStudiengaenge"
+                android:layout_marginLeft="5dp" 
+                android:paddingRight="5dp"/>
+
+            
+
+            <TextView
+                android:id="@+id/headerZulassung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentStudiengaenge"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/header_zulassung"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentZulassung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerZulassung"
+                android:layout_marginLeft="5dp" 
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:id="@+id/headerAbschluss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentZulassung"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/header_abschluss"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentAbschluss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerAbschluss"
+                android:layout_marginLeft="5dp" 
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"/>
+
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

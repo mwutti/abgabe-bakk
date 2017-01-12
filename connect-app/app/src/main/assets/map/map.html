@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title title="Index"></title>
+		<link rel="stylesheet" type="text/css" href="map_style.css">
+	</head>
+
+	<script type="text/javascript">
+		function showAusstellerPreview(id) {
+
+			var element = document.getElementById(id);
+			var rect = element.getBoundingClientRect();
+
+			Android.showPreview(id, rect.top , rect.left);
+		}
+
+		function zoomToAussteller(x,y) {
+			offsetX = screen.height/2
+			offsetY = window.innerHeight/2;
+			scrollTo(x,y);
+		}
+
+		function highlightAussteller(x,y,n) {
+			var highlight = document.getElementById("highlight");
+			highlight.style.border = "solid red " + n + "px";
+			highlight.style.position = "absolute";
+			highlight.style.top = y+6 ;
+			highlight.style.left = x+6;
+		}
+	</script>
+
+	<body>
+		<div class = "map">
+			<img class="map_top" src="map.png" usemap="#map_map" />
+			<img class ="map_bottom" src="map_underlay.png" />
+		</div>
+		<span class ="target" id="highlight"/>
+
+		<map name="map_map">
+			<area id="1" shape="rect" coords="810,966,827,983" onClick="showAusstellerPreview(id)">
+			<area id="2" shape="rect" coords="711,463,728,480" onClick="showAusstellerPreview(id)">
+			<area id="3" shape="rect" coords="808,902,825,919" onClick="showAusstellerPreview(id)">
+			<area id="4" shape="rect" coords="771,668,788,685" onClick="showAusstellerPreview(id)">
+			<area id="5" shape="rect" coords="128,334,145,351" onClick="showAusstellerPreview(id)">
+			<area id="6" shape="rect" coords="294,217,311,234" onClick="showAusstellerPreview(id)">
+			<area id="7" shape="rect" coords="759,528,776,545" onClick="showAusstellerPreview(id)">
+			<area id="8" shape="rect" coords="334,241,351,258" onClick="showAusstellerPreview(id)">
+			<area id="9" shape="rect" coords="873,590,890,607" onClick="showAusstellerPreview(id)">
+			<area id="10" shape="rect" coords="754,1045,771,1062" onClick="showAusstellerPreview(id)">
+			<area id="11" shape="rect" coords="402,581,419,598" onClick="showAusstellerPreview(id)">
+			<area id="12" shape="rect" coords="233,303,250,320" onClick="showAusstellerPreview(id)">
+			<area id="13" shape="rect" coords="831,548,848,565" onClick="showAusstellerPreview(id)">
+			<area id="14" shape="rect" coords="760,481,777,498" onClick="showAusstellerPreview(id)">
+			<area id="15" shape="rect" coords="863,623,880,640" onClick="showAusstellerPreview(id)">
+			<area id="16" shape="rect" coords="549,596,566,613" onClick="showAusstellerPreview(id)">
+			<area id="17" shape="rect" coords="595,609,612,626" onClick="showAusstellerPreview(id)">
+			<area id="18" shape="rect" coords="808,348,825,365" onClick="showAusstellerPreview(id)">
+			<area id="19" shape="rect" coords="808,399,825,416" onClick="showAusstellerPreview(id)">
+			<area id="20" shape="rect" coords="734,397,751,414" onClick="showAusstellerPreview(id)">
+			<area id="21" shape="rect" coords="682,557,699,574" onClick="showAusstellerPreview(id)">
+			<area id="22" shape="rect" coords="766,954,783,971" onClick="showAusstellerPreview(id)">
+			<area id="23" shape="rect" coords="759,505,776,522" onClick="showAusstellerPreview(id)">
+			<area id="24" shape="rect" coords="819,1010,836,1027" onClick="showAusstellerPreview(id)">
+			<area id="25" shape="rect" coords="159,319,176,336" onClick="showAusstellerPreview(id)">
+			<area id="26" shape="rect" coords="545,277,562,294" onClick="showAusstellerPreview(id)">
+			<area id="27" shape="rect" coords="771,818,788,835" onClick="showAusstellerPreview(id)">
+			<area id="28" shape="rect" coords="808,931,825,948" onClick="showAusstellerPreview(id)">
+			<area id="29" shape="rect" coords="767,991,784,1008" onClick="showAusstellerPreview(id)">
+			<area id="30" shape="rect" coords="838,495,855,512" onClick="showAusstellerPreview(id)">
+			<area id="31" shape="rect" coords="100,263,117,280" onClick="showAusstellerPreview(id)">
+			<area id="32" shape="rect" coords="121,263,138,280" onClick="showAusstellerPreview(id)">
+			<area id="33" shape="rect" coords="145,263,162,280" onClick="showAusstellerPreview(id)">
+			<area id="34" shape="rect" coords="772,717,789,734" onClick="showAusstellerPreview(id)">
+			<area id="35" shape="rect" coords="65,235,82,252" onClick="showAusstellerPreview(id)">
+			<area id="36" shape="rect" coords="832,570,849,587" onClick="showAusstellerPreview(id)">
+			<area id="37" shape="rect" coords="684,626,701,643" onClick="showAusstellerPreview(id)">
+			<area id="38" shape="rect" coords="711,530,728,547" onClick="showAusstellerPreview(id)">
+			<area id="39" shape="rect" coords="237,238,254,255" onClick="showAusstellerPreview(id)">
+			<area id="40" shape="rect" coords="773,338,790,355" onClick="showAusstellerPreview(id)">
+			<area id="41" shape="rect" coords="829,629,846,646" onClick="showAusstellerPreview(id)">
+			<area id="42" shape="rect" coords="573,604,590,621" onClick="showAusstellerPreview(id)">
+			<area id="43" shape="rect" coords="760,551,777,568" onClick="showAusstellerPreview(id)">
+			<area id="44" shape="rect" coords="783,552,800,569" onClick="showAusstellerPreview(id)">
+			<area id="45" shape="rect" coords="782,518,799,535" onClick="showAusstellerPreview(id)">
+			<area id="46" shape="rect" coords="773,772,790,789" onClick="showAusstellerPreview(id)">
+			<area id="47" shape="rect" coords="864,533,881,550" onClick="showAusstellerPreview(id)">
+			<area id="48" shape="rect" coords="808,209,825,226" onClick="showAusstellerPreview(id)">
+			<area id="49" shape="rect" coords="710,494,727,511" onClick="showAusstellerPreview(id)">
+			<area id="50" shape="rect" coords="264,216,281,233" onClick="showAusstellerPreview(id)">
+			<area id="51" shape="rect" coords="808,302,825,319" onClick="showAusstellerPreview(id)">
+			<area id="52" shape="rect" coords="526,591,543,608" onClick="showAusstellerPreview(id)">
+			<area id="53" shape="rect" coords="114,224,131,241" onClick="showAusstellerPreview(id)">
+			<area id="54" shape="rect" coords="184,244,201,261" onClick="showAusstellerPreview(id)">
+			<area id="55" shape="rect" coords="784,481,801,498" onClick="showAusstellerPreview(id)">
+			<area id="56" shape="rect" coords="153,209,170,226" onClick="showAusstellerPreview(id)">
+		</map>
+	</body>
+</html>

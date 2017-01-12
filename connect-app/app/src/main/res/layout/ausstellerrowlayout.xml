@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >   
+
+    <ImageView
+        android:id="@+id/ausstellerLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"  
+        android:layout_centerVertical="true"      
+        android:focusable="false"
+        android:maxHeight="10dp"
+        android:maxWidth="100dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/none" />
+
+    <Button
+        android:id="@+id/buttonAusstellerMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"  
+        android:background="@drawable/map"
+        android:focusable="false"
+        android:gravity="center"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/buttonAusstellerFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"  
+        android:layout_toLeftOf="@+id/buttonAusstellerMap"
+        android:background="@drawable/star"
+        android:focusable="false"
+        android:minHeight="0dp"
+        android:minWidth="0dp" 
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

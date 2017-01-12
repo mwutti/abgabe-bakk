@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/CompanyHeaderBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:background="@color/backgroundProfile"
+             >
+
+            <ImageView
+                android:id="@+id/logoCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left|top"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip" />
+
+            <Button
+                android:id="@+id/companyMapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/map"
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:textColor="@color/white" 
+                />
+
+            <Button
+                android:id="@+id/companyFavoriteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dip"
+                android:layout_toLeftOf="@+id/companyMapButton"
+                android:background="@drawable/star"
+                android:focusable="false"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/companyData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/CompanyHeaderBar"
+            android:layout_alignRight="@+id/CompanyHeaderBar"
+            android:layout_below="@+id/CompanyHeaderBar"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="3dip"
+            android:background="@color/backgroundProfile"
+             >
+
+            <TextView
+                android:id="@+id/headerBeschreibung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contentBeschreibung"
+                android:layout_alignParentTop="true"
+                android:text="@string/header_beschreibung"
+                android:textStyle="bold"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/contentBeschreibung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerBeschreibung"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/headerInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentBeschreibung"
+                android:layout_alignLeft="@id/contentBeschreibung"
+                android:text="@string/header_internet"
+                android:textStyle="bold"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/contentInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerInternet"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
